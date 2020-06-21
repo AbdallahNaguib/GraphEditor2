@@ -39,6 +39,7 @@ public class Main extends JComponent implements
         JFrame f2 = new JFrame("GraphPanel");
         JLabel title = new JLabel("Max-flow and Dijsktra");
         JLabel title2 = new JLabel("To D.Mostafa");
+        JLabel pid = new JLabel("PID : 23875368");
         JLabel abdalla = new JLabel("Abdallah Mohamed Naguib 20170160 abdonaguib99@gmail.com 01200469482");
         JLabel saad = new JLabel("Mohamed Ahmed Saad 20170212 mohamedsaad17841@gmail.com");
         JLabel hsn = new JLabel("Hussien Tarek Ismail 20170094 sehes333@stud.fci-cu.edu.eg");
@@ -47,6 +48,7 @@ public class Main extends JComponent implements
         int wid=600;
         title.setBounds(x,y,wid,50);
         title2.setBounds(x,y*2,wid,50);
+        pid.setBounds(x,y*6,wid,50);
         abdalla.setBounds(x,y*3,wid,50);
         saad.setBounds(x,y*4,wid,50);
         hsn.setBounds(x,y*5,wid,50);
@@ -55,9 +57,10 @@ public class Main extends JComponent implements
         f2.add(abdalla);
         f2.add(saad);
         f2.add(hsn);
+        f2.add(pid);
         f2.setSize(700,500);
         JButton button = new JButton("Start the program");
-        button.setBounds(x,y*6,wid,50);
+        button.setBounds(x,y*7,wid,50);
         button.addActionListener(e -> {
             f2.setVisible(false);
             EventQueue.invokeLater(() -> {
